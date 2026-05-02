@@ -1,0 +1,24 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.about-photo-img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.resume-viewer {
+  display: grid;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.resume-frame {
+  width: 100%;
+  height: 600px;
+  border-radius: 12px;
+}
