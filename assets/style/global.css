@@ -1,0 +1,44 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* GLOBAL LAYOUT */
+.page-grid {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 24px 48px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  font-size: 14px;
+  color: #6b7280;
+}
