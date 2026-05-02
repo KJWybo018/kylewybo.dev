@@ -1,4 +1,5 @@
 .about-grid {
+  padding: 60px 48px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
