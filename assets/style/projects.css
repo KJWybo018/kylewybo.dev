@@ -1,0 +1,12 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  border-left: 6px solid #2563eb;
+}
