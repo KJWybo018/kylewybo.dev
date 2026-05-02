@@ -126,3 +126,72 @@ body {
   font-size: 14px;
   color: #6b7280;
 }
+
+/* ABOUT PAGE GRID */
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.about-text {
+  display: grid;
+  gap: 20px;
+  max-width: 700px;
+}
+
+.about-photo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.photo-box {
+  width: 260px;
+  height: 260px;
+  background: #d1d5db;
+  border-radius: 12px;
+}
+
+/* CONTACT PAGE GRID */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-info {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-details p {
+  margin: 4px 0;
+}
+
+.contact-form form {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #1e40af;
+}
