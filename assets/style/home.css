@@ -1,0 +1,16 @@
+.content {
+  padding: 60px 48px;
+  display: grid;
+  gap: 60px;
+}
+
+.hero {
+  display: grid;
+  gap: 20px;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
