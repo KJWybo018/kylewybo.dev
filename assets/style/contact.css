@@ -1,0 +1,10 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-form form {
+  display: grid;
+  gap: 16px;
+}
