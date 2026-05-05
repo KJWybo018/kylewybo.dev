@@ -41,17 +41,23 @@
       </section>
 
       <section class="contact-form">
-        <form>
-          <label>Name</label>
-          <input type="text" required>
+        <form action="https://formsubmit.co/kylewybo@gmail.com" method="POST">
 
-          <label>Email</label>
-          <input type="email" required>
-
-          <label>Message</label>
-          <textarea rows="6" maxlength="500" required></textarea>
-
-          <button type="submit">Send Message</button>
+          <!-- FormSubmit settings -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://kjjwybo018.github.io/kylewybo.dev/contact/success.html">
+        
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" maxlength="600" required>This text box has a limit of 600 characters.</textarea>
+        
+          <button type="submit" class="button-primary">Send Message</button>
         </form>
       </section>
 
