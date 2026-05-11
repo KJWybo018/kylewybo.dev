@@ -321,7 +321,7 @@
               <label for="c-msg">Message</label>
               <textarea id="c-msg" rows="5" placeholder="Tell me about your project..."></textarea>
             </div>
-            <button class="contact-send" onclick="alert('Message sent! Connect this to your backend or Formspree.')">
+            <button class="contact-send" id="send-btn" onclick="sendEmail()">
               Send Message &nbsp;→
             </button>
           </div>
@@ -339,7 +339,41 @@
         <a href="#">Twitter</a>
       </div>
     </footer>
-     
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      emailjs.init('tXnsPZDM-5N2hzkq4'); // ← paste your public key here
+    
+      function sendEmail() {
+        const btn = document.getElementById('send-btn');
+        const name    = document.getElementById('c-name').value.trim();
+        const email   = document.getElementById('c-email').value.trim();
+        const subject = document.getElementById('c-subject').value.trim();
+        const message = document.getElementById('c-msg').value.trim();
+    
+        if (!name || !email || !message) {
+          alert('Please fill in your name, email, and message.');
+          return;
+        }
+    
+        btn.textContent = 'Sending…';
+        btn.disabled = true;
+    
+        emailjs.send('service_iqyzpol', 'template_9i31lf4', {
+          name, email, subject, message
+        })
+        .then(() => {
+          btn.textContent = 'Sent ✓';
+          document.getElementById('c-name').value = '';
+          document.getElementById('c-email').value = '';
+          document.getElementById('c-subject').value = '';
+          document.getElementById('c-msg').value = '';
+        })
+        .catch((err) => {
+          console.error(err);
+          btn.textContent = 'Failed — try again';
+          btn.disabled = false;
+        });
+      }
+    </script>
     <script>
       /* Custom cursor */
       const cur = document.getElementById('cursor');
