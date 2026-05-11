@@ -1,61 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Kyle Wybo | Portfolio</title>
-    <link rel="stylesheet" href="assets/style/global.css">
-    <link rel="stylesheet" href="assets/style/home.css">
-    <link rel="stylesheet" href="assets/style/responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
-    <div class="page-grid">
-
-      <header class="site-header">
-        <h1 class="logo">Kyle Wybo</h1>
-        <nav class="nav">
-          <a href="index.html">Home</a>
-          <a href="project/projects.html">Projects</a>
-          <a href="about/about.html">About</a>
-          <a href="contact/contact.html">Contact</a>
-        </nav>
-      </header>
-
-     <main class="content">
-
-        <!-- HERO SECTION -->
-        <section class="hero">
-          <h2>Software Engineer & Embedded Systems Developer</h2>
-          <p>I build mission‑driven systems with real‑world impact — from embedded safety systems to simulation tools and modular software architectures.</p>
-          <a class="cta" href="project/projects.html">View My Work</a>
-        </section>
-  
-        <!-- HIGHLIGHTS GRID -->
-        <section class="highlights">
-          <div class="card">
-            <h3>Embedded Systems</h3>
-            <p>Low‑level engineering, safety‑critical systems, and hardware‑software integration.</p>
-          </div>
-  
-          <div class="card">
-            <h3>Simulation & Robotics</h3>
-            <p>Modeling, control systems, and real‑time software for autonomous platforms.</p>
-          </div>
-  
-          <div class="card">
-            <h3>Full‑Stack Engineering</h3>
-            <p>Modern, modular applications built with clarity and purpose.</p>
-          </div>
-        </section>
-  
-      </main>
-
-       <!-- FOOTER -->
-      <footer class="site-footer">
-        <p>© 2025 Kyle Wybo</p>
-      </footer>
-  
+<head>
+  <meta charset="UTF-8" />
+  <title>Kyle Wybo • Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/style/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">KW</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </body>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-title">Kyle Wybo</h1>
+        <h2 class="hero-subtitle">Software Engineer • Embedded Systems • Simulation</h2>
+        <p class="hero-text">
+          I build mission‑driven engineering systems—from real‑time hand tracking and robotics simulation
+          to modular game engines and data‑driven dashboards.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section reveal">
+      <div class="section-inner">
+        <h2>About</h2>
+        <p>
+          I’m a software engineering student with a focus on embedded systems, simulation, and real‑time
+          interaction. I care about reliability, clean architecture, and building tools that actually
+          get used—whether that’s a hand‑tracking pipeline, a traffic analytics dashboard, or a modular
+          game UI system.
+        </p>
+        <p>
+          My work spans Python, C/C++, C#, and JavaScript, with experience in MediaPipe, OpenCV, Unity,
+          and modern web stacks. I like systems that are testable, composable, and easy to extend.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section reveal">
+      <div class="section-inner">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Languages</h3>
+            <p>C, C++, Python, C#, JavaScript</p>
+          </div>
+          <div class="skill-card">
+            <h3>Systems & Domains</h3>
+            <p>Embedded systems, simulation, computer vision, real‑time interaction</p>
+          </div>
+          <div class="skill-card">
+            <h3>Tools & Frameworks</h3>
+            <p>MediaPipe, OpenCV, Unity, React, Node.js</p>
+          </div>
+          <div class="skill-card">
+            <h3>Practices</h3>
+            <p>Modular architecture, TDD, event‑driven design, performance‑minded debugging</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section reveal">
+      <div class="section-inner">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+
+          <!-- Real-Time Hand Tracking -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Real‑Time Hand Tracking System</h3>
+              <p>
+                Modular Python pipeline using MediaPipe Tasks and OpenCV to track 3D hand landmarks from
+                a Logitech C920 and render a live skeletal overlay. Built with a class‑based architecture
+                for easy extension into gesture recognition and robotics control.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gr4pp-L -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Gr4pp‑L (Unity Game Project)</h3>
+              <p>
+                Physics‑driven Unity game featuring modular gameplay systems, custom UI architecture, and
+                reusable C# components. Focused on clean state management and extensible in‑game interfaces.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Autonomous Simulation Toolkit -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Autonomous Simulation Toolkit</h3>
+              <p>
+                Python‑based simulation environment for robotics and control systems research. Designed to
+                prototype algorithms, visualize behavior, and iterate quickly on autonomous logic.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Intersection Traffic Observer -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Intersection Traffic Observer</h3>
+              <p>
+                Web dashboard built with React and Tailwind for visualizing traffic and safety metrics.
+                Integrates academic data sources into clear, actionable visualizations for research teams.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section reveal">
+      <div class="section-inner">
+        <h2>Contact</h2>
+        <p>
+          Interested in simulation, embedded systems, or real‑time interaction work?
+          I’m open to mission‑driven engineering roles and collaborations.
+        </p>
+        <a class="btn primary" href="mailto:kylewybo@gmail.com">Email Me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Kyle Wybo</span>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/script.js"></script>
+</body>
 </html>
