@@ -204,4 +204,171 @@
       </div>
 </section>
 
+    <!-- PROJECTS -->
+    <section id="projects" style="border-bottom: 1px solid var(--rule);">
+      <div class="page-section">
+        <div class="section-header reveal">
+          <span class="section-num">03</span>
+          <h2 class="section-title">Selected <em>Work</em></h2>
+        </div>
+     
+        <a class="project-entry reveal" href="#" onclick="return false;">
+          <div class="project-num">01</div>
+          <div class="project-body">
+            <div class="project-title">TaskFlow — SaaS Platform</div>
+            <p class="project-desc">A real-time project management platform with WebSocket collaboration, role-based access, and Kanban workflows. Handles 500+ concurrent users with sub-100ms updates.</p>
+            <div class="project-chips">
+              <span class="project-chip">React</span>
+              <span class="project-chip">Node.js</span>
+              <span class="project-chip">WebSocket</span>
+              <span class="project-chip">PostgreSQL</span>
+              <span class="project-chip">Docker</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+     
+        <a class="project-entry reveal" href="#" onclick="return false;">
+          <div class="project-num">02</div>
+          <div class="project-body">
+            <div class="project-title">ShopForge — E-Commerce Engine</div>
+            <p class="project-desc">Full-featured e-commerce engine with dynamic product catalog, Stripe payment integration, admin dashboard, and multi-tenant architecture for agency use.</p>
+            <div class="project-chips">
+              <span class="project-chip">Next.js</span>
+              <span class="project-chip">TypeScript</span>
+              <span class="project-chip">Stripe</span>
+              <span class="project-chip">MySQL</span>
+              <span class="project-chip">Redis</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+     
+        <a class="project-entry reveal" href="#" onclick="return false;">
+          <div class="project-num">03</div>
+          <div class="project-body">
+            <div class="project-title">PriceRadar — Market Data Aggregator</div>
+            <p class="project-desc">Live cryptocurrency and stock price aggregator. Two-server architecture with sub-second data updates, interactive charting, and user-defined price alerts via email.</p>
+            <div class="project-chips">
+              <span class="project-chip">TypeScript</span>
+              <span class="project-chip">Express</span>
+              <span class="project-chip">Redis</span>
+              <span class="project-chip">WebSocket</span>
+              <span class="project-chip">Chart.js</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+     
+        <a class="project-entry reveal" href="#" onclick="return false;">
+          <div class="project-num">04</div>
+          <div class="project-body">
+            <div class="project-title">ChatLane — Secure Messaging</div>
+            <p class="project-desc">End-to-end encrypted messaging app with persistent chat rooms, file sharing, read receipts, and presence indicators. Deployed via Docker on a self-managed VPS.</p>
+            <div class="project-chips">
+              <span class="project-chip">React</span>
+              <span class="project-chip">Socket.io</span>
+              <span class="project-chip">MongoDB</span>
+              <span class="project-chip">JWT</span>
+              <span class="project-chip">Docker</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+     
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="page-section">
+        <div class="contact-grid">
+          <div class="reveal">
+            <div class="contact-hed">Let's<br />make<br /><em>something.</em></div>
+            <p class="contact-note">Open to freelance projects, full-time roles, and interesting collaborations. Don't be a stranger.</p>
+            <div class="contact-links">
+              <a class="contact-link-row" href="mailto:hello@alexmorgan.dev">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-val">hello@alexmorgan.dev</span>
+              </a>
+              <a class="contact-link-row" href="#" onclick="return false;">
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-val">github.com/alexmorgan</span>
+              </a>
+              <a class="contact-link-row" href="#" onclick="return false;">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-val">linkedin.com/in/alexmorgan</span>
+              </a>
+              <a class="contact-link-row" href="#" onclick="return false;">
+                <span class="contact-link-label">Location</span>
+                <span class="contact-link-val">Detroit, MI — Remote Friendly</span>
+              </a>
+            </div>
+          </div>
+     
+          <div class="contact-form reveal">
+            <div class="cfield">
+              <label for="c-name">Name</label>
+              <input id="c-name" type="text" placeholder="Jane Smith" />
+            </div>
+            <div class="cfield">
+              <label for="c-email">Email</label>
+              <input id="c-email" type="email" placeholder="jane@company.com" />
+            </div>
+            <div class="cfield">
+              <label for="c-subject">Subject</label>
+              <input id="c-subject" type="text" placeholder="Project Inquiry" />
+            </div>
+            <div class="cfield">
+              <label for="c-msg">Message</label>
+              <textarea id="c-msg" rows="5" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button class="contact-send" onclick="alert('Message sent! Connect this to your backend or Formspree.')">
+              Send Message &nbsp;→
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- FOOTER -->
+    <footer>
+      <span class="footer-copy">© 2026 Alex Morgan. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Dribbble</a>
+      </div>
+    </footer>
+     
+    <script>
+      /* Custom cursor */
+      const cur = document.getElementById('cursor');
+      let mx = -100, my = -100;
+      document.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        cur.style.left = mx + 'px';
+        cur.style.top  = my + 'px';
+      });
+      document.querySelectorAll('a, button, .project-entry, .skill-block').forEach(el => {
+        el.addEventListener('mouseenter', () => cur.classList.add('big'));
+        el.addEventListener('mouseleave', () => cur.classList.remove('big'));
+      });
+     
+      /* Scroll reveal */
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach((e, i) => {
+          if (e.isIntersecting) {
+            e.target.style.transitionDelay = (i * 0.06) + 's';
+            e.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.08 });
+      document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    </script>
+
   </body>
+</html>
